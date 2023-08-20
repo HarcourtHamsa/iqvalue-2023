@@ -32,7 +32,7 @@ const CRYPRO_PAYMENT_DETAILS = [
     id: 1,
     name: "Bitcoin",
     address: "bc1qxg36lz4q6x7v97mv558x7ezngpkndwn2hknfpl",
-    icon: <Icon as={FaBitcoin} w={16} h={16} color="goldenrod" />,
+    icon: <Icon as={FaBitcoin} w={16} h={16} color="orange" />,
   },
 
   {
@@ -52,7 +52,7 @@ const Card = ({ title, text, icon, notify }) => {
       <Text>{title}</Text>
       <Button
         variant="solid"
-        colorScheme="yellow"
+        colorScheme="orange"
         px={6}
         w="fit-content"
         fontWeight="normal"
@@ -177,7 +177,7 @@ function Deposit() {
             <Text>USDT</Text>
             <Button
               variant="solid"
-              colorScheme="yellow"
+              colorScheme="orange"
               px={6}
               w="fit-content"
               fontWeight="normal"
@@ -265,7 +265,7 @@ function Deposit() {
 
                 <Stack spacing={10}>
                   <Button
-                    colorScheme="yellow"
+                    colorScheme="orange"
                     fontWeight="normal"
                     type="submit"
                     mt={6}

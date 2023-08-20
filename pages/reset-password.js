@@ -76,7 +76,7 @@ function ResetPassword() {
           <Text
             textTransform="uppercase"
             letterSpacing="3px"
-            color="yellow.500"
+            color="orange.500"
             textAlign="center"
             mb={10}
           >
@@ -122,7 +122,7 @@ function ResetPassword() {
               </FormControl>
 
               <Button
-                colorScheme={"yellow"}
+                colorScheme={"orange"}
                 rounded={0}
                 fontWeight="normal"
                 type="submit"

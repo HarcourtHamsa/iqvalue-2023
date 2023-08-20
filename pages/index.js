@@ -8,11 +8,13 @@ import {
   List,
   ListIcon,
   ListItem,
+  Center
 } from "@chakra-ui/react";
 import React from "react";
 import Image from "next/image";
 import { Container, Button } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
+import { TbFileSearch, TbShieldLock, TbVersions } from "react-icons/tb";
 import CryptoChartTape from "../components/common/CryptoChartTape";
 import { MarketOverview } from "react-ts-tradingview-widgets";
 import {
@@ -44,7 +46,7 @@ function index() {
 
       <Box p={4} mt={"36"} bg="gray.50">
         <Stack
-          spacing={4}
+          spacing={2}
           as={Container}
           maxW={"3xl"}
           textAlign={"center"}
@@ -52,7 +54,7 @@ function index() {
         >
           <Heading
             lineHeight={"110%"}
-            fontSize={{ base: "2xl", sm: "4xl", md: "4xl" }}
+            fontSize={{ base: "2xl", sm: "3xl", md: "3xl" }}
             fontWeight="bold"
             mb={3}
           >
@@ -68,9 +70,14 @@ function index() {
         </Stack>
 
         <Container maxW={"6xl"} mt={10} textAlign="center">
-          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={0}>
             <Box p={12} borderRadius={"10px"}>
-              <Image src={secure} alt="" />
+              {/* <Image src={secure} alt="" /> */}
+              
+
+              <Center>
+              <TbShieldLock size={40} />
+              </Center>
               <Text fontWeight={600} my={"4"}>
                 Secure Storage
               </Text>
@@ -81,7 +88,9 @@ function index() {
             </Box>
 
             <Box p={12} borderRadius={"10px"}>
-              <Image src={research} alt="" />
+            <Center>
+            <TbFileSearch size={40} />
+            </Center>
               <Text fontWeight={600} my={"4"}>
                 Research & Development
               </Text>
@@ -91,7 +100,9 @@ function index() {
             </Box>
 
             <Box p={12} borderRadius="10px">
-              <Image src={options} alt="" />
+              <Center>
+            <TbVersions size={40} />
+              </Center>
               <Text fontWeight={600} my={"4"}>
                 Various Options
               </Text>
@@ -110,7 +121,7 @@ function index() {
             <Box p={12} borderRadius={"10px"}>
               <Heading
                 lineHeight={"110%"}
-                fontSize={{ base: "2xl", sm: "4xl", md: "4xl" }}
+                fontSize={{ base: "2xl", sm: "3xl", md: "3xl" }}
                 fontWeight="bold"
                 mb={3}
               >
@@ -125,27 +136,27 @@ function index() {
               </Text>
 
               <Text mt={10}>
-                We’re building miningplace that will bring anyone who believes
+                We&apos;re building miningplace that will bring anyone who believes
                 in bitcoin to join the digital cryptocurrency revolution. The
                 world is moving on to this revolution at an unprecedented pace.
               </Text>
 
               <Text mt={10}>
                 Now is your time. With bit-cloudminer.co you can start mining
-                bitcoin with ease, confidence and trust. Whether you’re a first
+                bitcoin with ease, confidence and trust. Whether you&apos;re a first
                 time miner or a professional has got you both covered!
               </Text>
 
               {/* HERE !!! */}
               <Button
                 mt={10}
-                colorScheme={"yellow"}
+                colorScheme={"orange"}
                 as="a"
                 href="/about"
                 size="lg"
                 fontSize="md"
                 fontWeight="normal"
-                rounded={0}
+                rounded={'sm'}
               >
                 Learn More
               </Button>
@@ -223,11 +234,11 @@ function index() {
                   mb={3}
                 >
                   <Text>
-                    Explore Quality <span style={{color: 'goldenrod'}}>Mining Technology</span>
+                    Explore Quality <span style={{color: 'orange'}}>Mining Technology</span>
                   </Text>
                 </Heading>
                 <Text mt={10}>
-                  We at Bitcloud offer you the fastest and the most legit way to
+                  We at IQ Value Investments offer you the fastest and the most legit way to
                   successfully accumulate your BTC. Our sophisticated technology
                   does all the hard work, making sure that every customer is
                   100% satisfied and that every mining goes through smoothly.
@@ -242,21 +253,21 @@ function index() {
                 >
                   <List spacing={3} textAlign="start">
                     <ListItem>
-                      <ListIcon as={FaCheckCircle} color="yellow.500" />
+                      <ListIcon as={FaCheckCircle} color="orange.500" />
                       Own Data Centers
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={FaCheckCircle} color="yellow.500" />
+                      <ListIcon as={FaCheckCircle} color="orange.500" />
                       24/7 Technical Support
                     </ListItem>
 
                     <ListItem>
-                      <ListIcon as={FaCheckCircle} color="yellow.500" />
+                      <ListIcon as={FaCheckCircle} color="orange.500" />
                       99.9% Uptime Guarantee
                     </ListItem>
 
                     <ListItem>
-                      <ListIcon as={FaCheckCircle} color="yellow.500" />
+                      <ListIcon as={FaCheckCircle} color="orange.500" />
                       Instant Setup
                     </ListItem>
                   </List>

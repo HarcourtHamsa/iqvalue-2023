@@ -1,6 +1,6 @@
 import axios from "axios";
 const environment = {
-  prod: "https://bitcloud.onrender.com",
+  prod: "https://iq-value-investment.onrender.com",
   dev: "http://localhost:8080",
 };
 axios.defaults.baseURL = environment.prod;

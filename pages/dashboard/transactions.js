@@ -48,7 +48,7 @@ function Transactions() {
         <Box h={"fit-content"}>
           <TableContainer>
             <Table variant="striped">
-              <Thead bgColor="yellow.400">
+              <Thead bgColor="orange.400">
                 <Tr>
                   <Th
                     textTransform="capitalize"

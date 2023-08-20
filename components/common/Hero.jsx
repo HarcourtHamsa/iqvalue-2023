@@ -134,10 +134,10 @@ export default function Hero() {
             },
             particles: {
               color: {
-                value: "#ECC94B",
+                value: "#fff",
               },
               links: {
-                color: "#ECC94B",
+                color: "#fff",
                 distance: 150,
                 enable: true,
                 opacity: 0.5,
@@ -178,20 +178,20 @@ export default function Hero() {
         <Stack
           as={Box}
           textAlign={"left"}
-          spacing={{ base: 8, md: 14 }}
+          spacing={{ base: 8, md: 8 }}
           py={{ base: 20, md: 20 }}
           px={{ base: 0, md: 20 }}
           maxW={"3xl"}
         >
           <Heading
             // fontWeight={600}
-            fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
+            fontSize={{ base: "3xl", sm: "4xl", md: "5xl" }}
             color="white"
           >
             <Text>Join The Global Leader Of Financial Investments</Text>
           </Heading>
           <Text color={"white"}>
-            Bitcloud is a group of financial and cryptocurrency
+            IQ Value Investments is a group of financial and cryptocurrency
             experts that invest in mining and cryptocurrency trading. We
             carefully examine the volatility of bitcoin and other crypto
             currencies, invest and make good profit from our investments.
@@ -204,19 +204,19 @@ export default function Hero() {
             position={"relative"}
           >
             <Button
-              colorScheme={"yellow"}
+              colorScheme={"orange"}
               as="a"
               href="/register"
               size="lg"
               fontSize="md"
               fontWeight="normal"
-              rounded={0}
+              rounded="sm"
             >
               Get Started
             </Button>
             <Button
-              colorScheme={"yellow"}
-              variant="ghost"
+              color={"orange"}
+              variant=""
               //   rounded={"full"}
               as="a"
               href="/login"

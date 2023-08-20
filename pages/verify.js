@@ -38,7 +38,7 @@ function Verify() {
             my={10}
             textAlign="center"
             letterSpacing="3px"
-            color="yellow.400"
+            color="orange.400"
           >
             RESET PASSWORD
           </Text>

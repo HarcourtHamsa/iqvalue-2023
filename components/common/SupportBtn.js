@@ -9,7 +9,7 @@ function SupportBtn() {
       pos="fixed"
       bottom={{ base: "6rem", md: "55px" }}
       right={{ base: "22", md: "10" }}
-      bg="yellow.400"
+      bg="orange.400"
       color="black"
       rounded={"full"}
       width="fit-content"
@@ -19,7 +19,7 @@ function SupportBtn() {
       padding="12px 25px"
       shadow="md"
       _hover={{ cursor: "pointer" }}
-      href="mailto:support@bitcloud.network"
+      href="mailto:support@IQ Value Investments.network"
     >
       <BsQuestionCircle />
       <Text>support</Text>

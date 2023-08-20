@@ -67,7 +67,7 @@ function Payment() {
         <Button
           fontWeight="normal"
           mt={5}
-          colorScheme="yellow"
+          colorScheme="orange"
           fontSize="1rem"
           rounded={0}
           onClick={onOpen}
@@ -110,7 +110,7 @@ function Payment() {
             <ModalFooter>
               <Button
                 onClick={onClose}
-                colorScheme="yellow"
+                colorScheme="orange"
                 rounded={0}
                 mr={2}
                 fontWeight="normal"

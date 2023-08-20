@@ -103,7 +103,7 @@ function Verify() {
         <Heading fontSize="2xl" mb={5} fontWeight="normal">
           <Text>Verify Identity</Text>
           <Text fontSize="small">
-            Verify your identity to unlock various features on Bitcloud.
+            Verify your identity to unlock various features on IQ Value Investments.
           </Text>
         </Heading>
 
@@ -171,7 +171,7 @@ function Verify() {
 
                 <Stack spacing={10}>
                   <Button
-                    colorScheme="yellow"
+                    colorScheme="orange"
                     fontWeight="normal"
                     type="submit"
                     mt={6}

@@ -100,7 +100,7 @@ function Register() {
                 textTransform="uppercase"
                 letterSpacing="3px"
                 textAlign="center"
-                color="yellow.500"
+                color="orange.500"
                 mt={5}
               >
                 Create a free account
@@ -112,7 +112,7 @@ function Register() {
                     <Input
                       type={"text"}
                       p={"6"}
-                      rounded={0}
+                      rounded={'sm'}
                       id="first-name"
                       name="firstName"
                       onChange={formik.handleChange}
@@ -127,7 +127,7 @@ function Register() {
                     <Input
                       type={"text"}
                       p={"6"}
-                      rounded={0}
+                      rounded={'sm'}
                       id="last-name"
                       name="lastName"
                       onChange={formik.handleChange}
@@ -161,7 +161,7 @@ function Register() {
                     <Input
                       type={"email"}
                       p={"6"}
-                      rounded={0}
+                      rounded={'sm'}
                       id="email"
                       name="email"
                       onChange={formik.handleChange}
@@ -176,7 +176,7 @@ function Register() {
                     <Input
                       type={showPassword ? "text" : "password"}
                       p={6}
-                      rounded={0}
+                      rounded={'sm'}
                       id="password"
                       name="password"
                       onChange={formik.handleChange}
@@ -197,8 +197,8 @@ function Register() {
 
                 <Button
                   p={6}
-                  rounded={0}
-                  colorScheme={"yellow"}
+                  rounded={'sm'}
+                  colorScheme={"orange"}
                   fontWeight="normal"
                   type="submit"
                   isLoading={isLoading}
@@ -207,8 +207,8 @@ function Register() {
                 </Button>
               </Stack>
 
-              <Text mt={3}>
-                Have A Bitcloud Account? <Link href="/login">Log in</Link>
+              <Text mt={6}>
+                Already have an account? <Link href="/login">Log in</Link>
               </Text>
             </form>
           </Box>

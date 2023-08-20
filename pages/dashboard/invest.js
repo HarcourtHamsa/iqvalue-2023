@@ -56,7 +56,7 @@ export const InvestmentPlanCard = ({
         </List>
         <Box mt={20} ml="auto" w="inherit">
           <Button
-            colorScheme="yellow"
+            colorScheme="orange"
             w="full"
             rounded={0}
             variant="solid"

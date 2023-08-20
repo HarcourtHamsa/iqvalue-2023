@@ -14,8 +14,10 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  Container
 } from "@chakra-ui/react";
 import Image from "next/image";
+import { TbChartArcs } from 'react-icons/tb'
 import {
   HamburgerIcon,
   CloseIcon,
@@ -35,7 +37,7 @@ export default function Navbar() {
         opacity={0.9}
         minH={"60px"}
         py={{ base: 2 }}
-        px={{ base: 4 }}
+        px={{ base: 16 }}
         align={"center"}
       >
         <Flex
@@ -52,9 +54,9 @@ export default function Navbar() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Image src={Logo} alt="" />
-
+        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }} align="center">
+          {/* <Image src={Logo} alt="" /> */}
+          <TbChartArcs size={35} />
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -81,9 +83,9 @@ export default function Navbar() {
             fontSize={"sm"}
             as={"a"}
             fontWeight={"normal"}
-            rounded="0"
+            rounded="sm"
             color={"white"}
-            bg={"yellow.400"}
+            bg={"orange.400"}
             href={"/register"}
             _hover={{
               color: "black",

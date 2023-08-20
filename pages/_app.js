@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
       <AuthProvider>
         <Component {...pageProps} />
 
-        <SupportBtn />
+        {/* <SupportBtn /> */}
       </AuthProvider>
     </ChakraProvider>
   );

@@ -29,6 +29,7 @@ import {
   BiTime,
   BiLogOut,
 } from "react-icons/bi";
+import { TbChartArcs } from 'react-icons/tb'
 
 import Logo from "../../assets/images/logo.svg";
 import Image from "next/image";
@@ -100,8 +101,8 @@ const SidebarContent = ({ onClose, ...rest }) => {
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Image src={Logo} alt="" />
-
+        {/* <Image src={Logo} alt="" /> */}
+        <TbChartArcs size={35} color="white"/>
         <CloseButton
           display={{ base: "flex", md: "none" }}
           onClick={onClose}
@@ -116,7 +117,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
       ))}
 
       <Text
-        _hover={{ cursor: "pointer", color: "yellow.400" }}
+        _hover={{ cursor: "pointer", color: "orange.400" }}
         color="white"
         style={{ textDecoration: "none" }}
         p="4"
@@ -160,7 +161,7 @@ const NavItem = ({ icon, href, children, ...rest }) => {
         role="group"
         cursor="pointer"
         _hover={{
-          color: "yellow.400",
+          color: "orange.400",
         }}
         {...rest}
       >

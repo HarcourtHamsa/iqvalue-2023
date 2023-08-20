@@ -106,7 +106,7 @@ function Contact() {
                       color="white"
                     >
                       <MdMail size={25} />
-                      <Link>support@bitcloud.network</Link>
+                      <Link>support@IQ Value Investments.network</Link>
                     </Flex>
                   </Box>
                   <FormControl id="email">
@@ -123,7 +123,7 @@ function Contact() {
                   </FormControl>
                   <Stack spacing={10}>
                     <Button
-                      colorScheme="yellow"
+                      colorScheme="orange"
                       fontWeight="normal"
                       type="submit"
                       mt={6}

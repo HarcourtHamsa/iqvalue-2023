@@ -9,6 +9,8 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { TbChartArcs } from 'react-icons/tb'
+
 import { MdLocationOn } from "react-icons/md";
 import Logo from "../../assets/images/logo.svg";
 
@@ -33,13 +35,14 @@ export default function Footer() {
         >
           <Stack spacing={6}>
             <Box>
-              <Image src={Logo} alt="" />
+              {/* <Image src={Logo} alt="" /> */}
+              <TbChartArcs size={35} />
             </Box>
             <Text fontSize={"sm"} display="flex" alignItems="center" gap="2">
               <MdLocationOn size={20} /> 2717 Commervial Center Blvd Ste E200
             </Text>
             <Text fontSize={"sm"}>
-              © 2022 Bitcloud Templates. All rights reserved
+              © 2022 IQ Value Investments Templates. All rights reserved
             </Text>
           </Stack>
           <Stack align={"flex-start"}>

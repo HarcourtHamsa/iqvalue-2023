@@ -142,7 +142,7 @@ function Withdraw() {
 
                 <Button
                   rounded={0}
-                  colorScheme={"yellow"}
+                  colorScheme={"orange"}
                   fontWeight="normal"
                   mt={6}
                   p={6}
@@ -233,7 +233,7 @@ function Withdraw() {
                 </FormControl>
 
                 <Button
-                  colorScheme={"yellow"}
+                  colorScheme={"orange"}
                   fontWeight="normal"
                   mt={6}
                   p={6}
@@ -303,7 +303,7 @@ function Withdraw() {
             <ModalFooter>
               <Button
                 onClick={onClose}
-                colorScheme="yellow"
+                colorScheme="orange"
                 rounded={0}
                 mr={2}
                 fontWeight="normal"

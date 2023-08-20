@@ -119,7 +119,7 @@ function Login() {
                 textTransform="uppercase"
                 letterSpacing="3px"
                 textAlign="center"
-                color="yellow.500"
+                color="orange.500"
               >
                 Account Login
               </Text>
@@ -166,8 +166,8 @@ function Login() {
 
                 <Button
                   p={6}
-                  rounded={0}
-                  colorScheme="yellow"
+                  rounded={'sm'}
+                  colorScheme="orange"
                   fontWeight="normal"
                   isLoading={isLoading}
                   type="submit"
@@ -176,12 +176,12 @@ function Login() {
                 </Button>
               </Stack>
 
-              <Text mt={3} color="yellow.500">
+              <Text mt={3} color="orange.500">
                 <Link href="/forgot-password">Forgot password?</Link>
               </Text>
 
               <Text mt={3}>
-                New to Bitcloud? <Link href="/register">Sign up</Link>
+                Don&apos;t have an account? <Link href="/register">Sign up</Link>
               </Text>
             </form>
           </Box>

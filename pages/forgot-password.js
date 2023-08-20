@@ -73,7 +73,7 @@ function ForgotPassword() {
           <Text
             textTransform="uppercase"
             letterSpacing="3px"
-            color="yellow.500"
+            color="orange.500"
             textAlign="center"
             my={10}
           >
@@ -96,7 +96,7 @@ function ForgotPassword() {
               </FormControl>
 
               <Button
-                colorScheme={"yellow"}
+                colorScheme={"orange"}
                 rounded={0}
                 fontWeight="normal"
                 type="submit"
