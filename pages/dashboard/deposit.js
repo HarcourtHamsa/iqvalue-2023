@@ -31,14 +31,14 @@ const CRYPRO_PAYMENT_DETAILS = [
   {
     id: 1,
     name: "Bitcoin",
-    address: "bc1qxg36lz4q6x7v97mv558x7ezngpkndwn2hknfpl",
+    address: "1PqdC6vrbgSbV95sYZjr7iNYnSHTmzE8ka",
     icon: <Icon as={FaBitcoin} w={16} h={16} color="orange" />,
   },
 
   {
     id: 2,
     name: "Ethereum (ERC20)",
-    address: "0x61feBAD473BeB403F4639EE59aF8d7698A5CB766",
+    address: "0x3228e90625cdd909ecd996f3979cc0e7122ec098",
     icon: <Icon as={FaEthereum} w={16} h={16} color="black" />,
   },
 ];
@@ -183,7 +183,7 @@ function Deposit() {
               fontWeight="normal"
               rounded={0}
               onClick={() => {
-                navigator.clipboard.writeText('0x61feBAD473BeB403F4639EE59aF8d7698A5CB766');
+                navigator.clipboard.writeText('TLLeuYN4n64MdKq3dSSHNyWRhKgMZ52vKK');
                 notify(`copied`);
               }}
             >
