@@ -1,6 +1,6 @@
 import axios from "axios";
 const environment = {
-  prod: "https://iq-value-investment.onrender.com",
+  prod: "https://iqvalue-investments-6efaf38cc2b7.herokuapp.com/",
   dev: "http://localhost:8080",
 };
 axios.defaults.baseURL = environment.prod;

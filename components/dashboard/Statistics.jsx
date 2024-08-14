@@ -63,7 +63,7 @@ function StatsCard(props) {
   );
 }
 
-export default function Statistics() {
+export default function Statistics({ currency }) {
   const [user, setUser] = useState(null);
 
   async function fetchUser() {
@@ -75,27 +75,37 @@ export default function Statistics() {
     fetchUser();
   }, []);
 
+  function resolveCurrency(currency) {
+    if (currency === "usd") {
+      return "$";
+    } else if (currency === "gbp") {
+      return "£";
+    } else if (currency === "ngn") {
+      return "₦";
+    }
+  }
+
   return (
     <Box mx={"auto"} pt={5}>
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard
           title={"Deposited"}
-          stat={`$${user?.amountDeposited}`}
+          stat={` ${resolveCurrency(currency)}${user?.amountDeposited}`}
           icon={<BsBank2 size={"3em"} color="black" />}
         />
         <StatsCard
           title={"Profit"}
-          stat={`$${user?.profit}`}
+          stat={`${resolveCurrency(currency)}${user?.profit}`}
           icon={<BsServer size={"3em"} color="black" />}
         />
         <StatsCard
           title={"Balance"}
-          stat={`$${user?.balance}`}
+          stat={`${resolveCurrency(currency)}${user?.balance}`}
           icon={<IoIosCard size={"3em"} color="black" />}
         />
         <StatsCard
           title={"Ref. Bonus"}
-          stat={`$${user?.referalBonus}`}
+          stat={`${resolveCurrency(currency)}${user?.referalBonus}`}
           icon={<BsPeopleFill size={"3em"} color="black" />}
         />
       </SimpleGrid>

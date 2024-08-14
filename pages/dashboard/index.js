@@ -49,7 +49,7 @@ function Dashboard() {
           )}
 
           <Text fontSize="2xl">Welcome {user?.firstName}</Text>
-          <Statistics />
+          <Statistics currency={user?.currency} />
 
           <Container maxW="7xl" mx={"auto"} p={0} my={6}>
             <MarketData height={400} width="100%" />
